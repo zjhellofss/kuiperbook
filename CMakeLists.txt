@@ -1,0 +1,12 @@
+cmake_minimum_required(VERSION 3.16)
+project(kuiper_book)
+add_subdirectory(course0_prepare)
+add_subdirectory(course1_tensor)
+add_subdirectory(course2_graph)
+add_subdirectory(course7_resnetyolov5)
+add_subdirectory(course8_llama2)
+add_subdirectory(course3_buildgraph)
+add_subdirectory(course4_layerfac)
+add_subdirectory(course5_maxconv)
+add_subdirectory(course6_expression)
+
