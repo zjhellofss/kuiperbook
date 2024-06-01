@@ -149,11 +149,11 @@ TEST(test_network, yolov5) {
   std::vector<std::string> image_paths;
 
   for (uint32_t i = 0; i < batch_size; ++i) {
-    const std::string &image_path = "./course7_resnetyolov5/model_file/car.jpg";  // 可以放不同的图片
+    const std::string &image_path = "./course8_resnetyolov5/model_file/car.jpg";  // 可以放不同的图片
     image_paths.push_back(image_path);
   }
-  const std::string &param_path = "course7_resnetyolov5/model_file/yolov5s.pnnx.param";
-  const std::string &bin_path = "course7_resnetyolov5/model_file/yolov5s.pnnx.bin";
+  const std::string &param_path = "course8_resnetyolov5/model_file/yolov5s.pnnx.param";
+  const std::string &bin_path = "course8_resnetyolov5/model_file/yolov5s.pnnx.bin";
 
   YoloDemo(image_paths, param_path, bin_path, batch_size);
 }

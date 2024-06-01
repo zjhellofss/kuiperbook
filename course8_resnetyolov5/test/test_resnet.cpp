@@ -54,14 +54,14 @@ kuiper_infer::sftensor PreProcessImage(const cv::Mat &image) {
 
 TEST(test_net, resnet) {
     using namespace kuiper_infer;
-    const std::string &param_path = "course7_resnetyolov5/model_file/resnet18_batch1.pnnx.param";
-    const std::string &weight_path = "course7_resnetyolov5/model_file/resnet18_batch1.pnnx.bin";
+    const std::string &param_path = "course8_resnetyolov5/model_file/resnet18_batch1.pnnx.param";
+    const std::string &weight_path = "course8_resnetyolov5/model_file/resnet18_batch1.pnnx.bin";
     RuntimeGraph graph(param_path, weight_path);
     graph.Build("pnnx_input_0", "pnnx_output_0");
 
     const uint32_t batch_size = 1;
     std::vector<sftensor> inputs;
-    const std::string &path("course7_resnetyolov5/model_file/car.jpg");
+    const std::string &path("course8_resnetyolov5/model_file/car.jpg");
     for (uint32_t i = 0; i < batch_size; ++i) {
         cv::Mat image = cv::imread(path);
         // 图像预处理
