@@ -1,0 +1,3 @@
+[submodule "course9_llama2_new"]
+	path = course9_llama2_new
+	url = https://github.com/zjhellofss/KuiperLLama
